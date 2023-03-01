@@ -11,6 +11,11 @@ function ruotaParole(parola){
     return parolaReverse;
 }
 
+// FUNZIONE CHE SCRIVA NELL'HTML IL RISULTATO
+function printHTML (dove,cosa){
+    dove.innerHTML=(cosa);
+}
+
 // FUNZIONE CHE CONTROLLA CHE DUE PAROLE SIANO UGUALI 
 function equalityCheck (parola1,parola2){
     if(parola1 === parola2){
@@ -24,13 +29,24 @@ function equalityCheck (parola1,parola2){
 
 
 
-
-
 // DEFINISCO L'INPUT 
-const parola = prompt(' Inserisci una parola');
-// RUOTO LA PAROLA DI INPUT
-const parolaReverse = ruotaParole(parola);
-// STAMPO LA PAROLA RIBALTATA
-console.log('Se ribaltiamo la parola diventa:'+parolaReverse);
-// ESEGUO IL CONFRONTO
-console.log(equalityCheck(parola,parolaReverse));
+const parola = document.getElementById('input');
+// DEFINISCO IL BOTTONE DI OK 
+const okButton = document.getElementById('conferm');
+// DOVE SCRIVERE IL RISULTATO
+const result = document.getElementById('result');
+
+
+
+okButton.addEventListener('click',
+    function(){
+        const valueParola = parola.value;
+        const valueParolaReverse = ruotaParole(valueParola);
+        if(equalityCheck(valueParola,valueParolaReverse)===true){
+            printHTML(result,'Palindroma');
+        }else{
+            printHTML(result,'Non palindroma');
+        }
+    }
+)
+
