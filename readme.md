@@ -4,13 +4,14 @@
 ### -Sommiamo i due numeri
 ### -Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 ### -Dichiariamo chi ha vinto.
-
+----------------------------------
 ## RISOLUZIONE:
 
-
 ----------------------------------
+----------------------------------
+
 # ESERCIZIO PAROLA PALINDROMA
 ### -Chiedere all’utente di inserire una parola;
 ### -Creare una funzione per capire se la parola inserita è palindroma
-
+----------------------------------
 ## RISOLUZIONE:
