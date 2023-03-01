@@ -7,7 +7,7 @@ function randomNumber(min, max){
 
 // FUNZIONE PER VERIFICARE SE LA SOMMA DI DUE NUMERI SIA PARI
 // come input bisogna dare i 2 valori che si vogliono paragonare 
-// restituisce true nel caso sia pari e false nel caso del sispari 
+// restituisce 'pari' nel caso sia pari e 'dispari' nel caso del sispari 
 function pariVerification(num1,num2){
     const total = Number(num1) + Number(num2);
     if(total % 2 === 0){
