@@ -1,0 +1,12 @@
+/* RESET  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(24, 24, 69);
+}
