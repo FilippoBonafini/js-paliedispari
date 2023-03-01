@@ -28,10 +28,9 @@ function equalityCheck (parola1,parola2){
 
 // DEFINISCO L'INPUT 
 const parola = prompt(' Inserisci una parola');
-
-// RUOTO LA PAROLA DI INPUT E LA STAMPO
+// RUOTO LA PAROLA DI INPUT
 const parolaReverse = ruotaParole(parola);
+// STAMPO LA PAROLA RIBALTATA
 console.log('Se ribaltiamo la parola diventa:'+parolaReverse);
-
 // ESEGUO IL CONFRONTO
 console.log(equalityCheck(parola,parolaReverse));
